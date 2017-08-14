@@ -192,6 +192,10 @@
             "description": "Name and corresponding file for environment config.",
             "type": "object",
             "additionalProperties": true
+          },
+          "injectHTML": {
+            "description": "Option to automatically inject the JS generated files in index.html",
+            "type": "boolean"
           }
         },
         "additionalProperties": false

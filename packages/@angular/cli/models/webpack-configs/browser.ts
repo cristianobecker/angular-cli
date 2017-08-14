@@ -68,6 +68,7 @@ export function getBrowserConfig(wco: WebpackConfigOptions) {
         chunksSortMode: packageChunkSort(appConfig),
         excludeChunks: lazyChunks,
         xhtml: true,
+        inject: appConfig.injectHTML === true ? true : false,
         minify: buildOptions.target === 'production' ? {
           caseSensitive: true,
           collapseWhitespace: true,
